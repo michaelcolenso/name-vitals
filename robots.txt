@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://michaelcolenso.github.io/name-vitals/sitemap.xml

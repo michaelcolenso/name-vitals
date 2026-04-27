@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Name Vitals — Is your name going extinct?</title>
+  <meta name="description" content="Look up the popularity, trajectory, and vital status of any American name since 1880. Based on Social Security Administration data.">
+  <link rel="canonical" href="https://michaelcolenso.github.io/name-vitals/">
+  <meta property="og:title" content="Name Vitals — Is your name going extinct?">
+  <meta property="og:description" content="Look up the trajectory and vital status of any American name since 1880.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://michaelcolenso.github.io/name-vitals/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site">
+      <a class="brand" href="./">Name Vitals</a>
+      <nav>
+        <a href="./extinct.html">Extinct</a>
+        <a href="./endangered.html">Endangered</a>
+        <a href="./rising.html">Rising</a>
+        <a href="./about.html">About</a>
+      </nav>
+    </header>
+
+    <div id="view-home">
+      <h1>Is your name going extinct?</h1>
+      <p class="lede">A vital-signs report for any American name since 1880, drawn from 144 years of Social Security Administration records.</p>
+
+      <div class="search">
+        <input id="q" type="text" placeholder="Type a name — e.g. Dorothy, Jaxon, Khaleesi" autocomplete="off" spellcheck="false" autofocus>
+        <select id="sex" title="Limit to masculine or feminine">
+          <option value="">Either</option>
+          <option value="F">F</option>
+          <option value="M">M</option>
+        </select>
+        <button id="go">Check</button>
+        <div id="suggestions" class="suggestions hidden"></div>
+      </div>
+      <p class="search-hint">Your search stays in your browser — no account, no tracking.</p>
+
+      <div class="landing-ctas">
+        <a href="./extinct.html"><strong>Extinct names →</strong><span>Popular once, now given to zero babies.</span></a>
+        <a href="./endangered.html"><strong>Endangered names →</strong><span>Down 90%+ from their peak.</span></a>
+        <a href="./rising.html"><strong>Rising names →</strong><span>Growing faster than anything else.</span></a>
+      </div>
+
+      <h2>Popular right now</h2>
+      <p class="lede" style="margin-bottom:0.75rem;">Top ten girls and boys names from the latest year on record.</p>
+      <div id="popular-grid" class="featured-grid"></div>
+    </div>
+
+    <div id="view-name"></div>
+
+    <footer class="site">
+      <div>Built on public-domain data from the Social Security Administration.</div>
+      <div><a href="./about.html">About</a> · <a href="https://www.ssa.gov/oact/babynames/">SSA source</a></div>
+    </footer>
+  </div>
+
+  <script src="./assets/app.js"></script>
+  <script>
+    (async () => {
+      const qs = new URLSearchParams(location.search);
+      const home = document.getElementById("view-home");
+      const viewName = document.getElementById("view-name");
+      if (qs.get("name")) {
+        home.classList.add("hidden");
+        NameVitals.handleNameView(viewName, qs.get("name"), qs.get("sex") || null);
+      } else {
+        const input = document.getElementById("q");
+        const suggestions = document.getElementById("suggestions");
+        const go = document.getElementById("go");
+        const sex = document.getElementById("sex");
+        NameVitals.setupSearch(input, suggestions, go, sex);
+
+        const meta = await (await fetch(NameVitals.BASE + "data/meta.json")).json();
+        const latest = meta.yM;
+        const top = meta.top10PerYear[String(latest)] || [];
+        const topF = top.filter(r => r[1] === "F").slice(0, 10);
+        const topM = top.filter(r => r[1] === "M").slice(0, 10);
+        const row = (name, sex, count) => `<a href="./?name=${encodeURIComponent(name)}&sex=${sex}">${name}<span class="suffix">${sex}</span></a>`;
+        document.getElementById("popular-grid").innerHTML =
+          topF.map(r => row(r[0], r[1], r[2])).join("") +
+          topM.map(r => row(r[0], r[1], r[2])).join("");
+      }
+    })();
+  </script>
+</body>
+</html>

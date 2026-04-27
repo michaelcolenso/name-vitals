@@ -1,0 +1,72 @@
+# Paste this over .github/workflows/deploy.yml to pull fresh SSA data on every
+# deploy. Needs a token with `workflow` scope — my push was rejected without it,
+# so I couldn't apply it directly.
+#
+# What it adds vs the existing workflow:
+#   - Sets up Python on the runner
+#   - Downloads names.zip from SSA.gov (GitHub runner IPs are not blocked)
+#   - Unzips to viz/name-vitals/data_src/
+#   - Re-runs build_data.py + build_pages.py before uploading
+#
+# build_data.py prefers yob*.txt under data_src/ over the .rda mirror, so the
+# deploy always ships with the newest year available on SSA.gov.
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Fetch latest SSA names.zip
+        run: |
+          set -euo pipefail
+          mkdir -p viz/name-vitals/data_src
+          curl -fsSL -o /tmp/names.zip https://www.ssa.gov/oact/babynames/names.zip
+          unzip -oq /tmp/names.zip -d viz/name-vitals/data_src
+          # Keep only yob*.txt; drop the NationalReadMe.pdf etc.
+          find viz/name-vitals/data_src -type f ! -name 'yob*.txt' -delete
+          ls viz/name-vitals/data_src | head -5
+          echo "files: $(ls viz/name-vitals/data_src | wc -l)"
+
+      - name: Rebuild Name Vitals data and SEO pages
+        run: |
+          python -m pip install --quiet --upgrade pip
+          python viz/name-vitals/scripts/build_data.py
+          python viz/name-vitals/scripts/build_pages.py
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: viz
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

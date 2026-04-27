@@ -1,0 +1,6 @@
+# The repo root's .gitignore excludes `data` globally; un-ignore our bundled data/.
+!data/
+!data/**
+
+# Source-data drop folder (filled at deploy time or by curl; never commit raw yob*.txt).
+data_src/
