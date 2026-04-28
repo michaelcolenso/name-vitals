@@ -1,0 +1,2 @@
+[      63ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8743/Users/michaelcolenso/Projects/name-vitals/index.html:0
+[      92ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8743/favicon.ico:0

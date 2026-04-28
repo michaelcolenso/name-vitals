@@ -1,0 +1,88 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "Name Vitals" [ref=e4] [cursor=pointer]:
+      - /url: ./
+    - navigation [ref=e5]:
+      - link "Extinct" [ref=e6] [cursor=pointer]:
+        - /url: ./extinct.html
+      - link "Endangered" [ref=e7] [cursor=pointer]:
+        - /url: ./endangered.html
+      - link "Rising" [ref=e8] [cursor=pointer]:
+        - /url: ./rising.html
+      - link "About" [ref=e9] [cursor=pointer]:
+        - /url: ./about.html
+  - generic [ref=e10]:
+    - heading "Is your name going extinct?" [level=1] [ref=e11]
+    - paragraph [ref=e12]: A vital-signs report for any American name since 1880, drawn from 144 years of Social Security Administration records.
+    - generic [ref=e13]:
+      - textbox "Type a name — e.g. Dorothy, Jaxon, Khaleesi" [active] [ref=e14]
+      - combobox "Limit to masculine or feminine" [ref=e15] [cursor=pointer]:
+        - option "Either" [selected]
+        - option "F"
+        - option "M"
+      - button "Check" [ref=e16] [cursor=pointer]
+    - paragraph [ref=e17]: Your search stays in your browser — no account, no tracking.
+    - generic [ref=e18]:
+      - link "Extinct names → Popular once, now given to zero babies." [ref=e19] [cursor=pointer]:
+        - /url: ./extinct.html
+        - strong [ref=e20]: Extinct names →
+        - text: Popular once, now given to zero babies.
+      - link "Endangered names → Down 90%+ from their peak." [ref=e21] [cursor=pointer]:
+        - /url: ./endangered.html
+        - strong [ref=e22]: Endangered names →
+        - text: Down 90%+ from their peak.
+      - link "Rising names → Growing faster than anything else." [ref=e23] [cursor=pointer]:
+        - /url: ./rising.html
+        - strong [ref=e24]: Rising names →
+        - text: Growing faster than anything else.
+    - heading "Popular right now" [level=2] [ref=e25]
+    - paragraph [ref=e26]: Top ten girls and boys names from the latest year on record.
+    - generic [ref=e27]:
+      - link "EmmaF" [ref=e28] [cursor=pointer]:
+        - /url: ./?name=Emma&sex=F
+      - link "OliviaF" [ref=e29] [cursor=pointer]:
+        - /url: ./?name=Olivia&sex=F
+      - link "AvaF" [ref=e30] [cursor=pointer]:
+        - /url: ./?name=Ava&sex=F
+      - link "IsabellaF" [ref=e31] [cursor=pointer]:
+        - /url: ./?name=Isabella&sex=F
+      - link "SophiaF" [ref=e32] [cursor=pointer]:
+        - /url: ./?name=Sophia&sex=F
+      - link "MiaF" [ref=e33] [cursor=pointer]:
+        - /url: ./?name=Mia&sex=F
+      - link "CharlotteF" [ref=e34] [cursor=pointer]:
+        - /url: ./?name=Charlotte&sex=F
+      - link "AmeliaF" [ref=e35] [cursor=pointer]:
+        - /url: ./?name=Amelia&sex=F
+      - link "EvelynF" [ref=e36] [cursor=pointer]:
+        - /url: ./?name=Evelyn&sex=F
+      - link "AbigailF" [ref=e37] [cursor=pointer]:
+        - /url: ./?name=Abigail&sex=F
+      - link "LiamM" [ref=e38] [cursor=pointer]:
+        - /url: ./?name=Liam&sex=M
+      - link "NoahM" [ref=e39] [cursor=pointer]:
+        - /url: ./?name=Noah&sex=M
+      - link "WilliamM" [ref=e40] [cursor=pointer]:
+        - /url: ./?name=William&sex=M
+      - link "JamesM" [ref=e41] [cursor=pointer]:
+        - /url: ./?name=James&sex=M
+      - link "LoganM" [ref=e42] [cursor=pointer]:
+        - /url: ./?name=Logan&sex=M
+      - link "BenjaminM" [ref=e43] [cursor=pointer]:
+        - /url: ./?name=Benjamin&sex=M
+      - link "MasonM" [ref=e44] [cursor=pointer]:
+        - /url: ./?name=Mason&sex=M
+      - link "ElijahM" [ref=e45] [cursor=pointer]:
+        - /url: ./?name=Elijah&sex=M
+      - link "OliverM" [ref=e46] [cursor=pointer]:
+        - /url: ./?name=Oliver&sex=M
+      - link "JacobM" [ref=e47] [cursor=pointer]:
+        - /url: ./?name=Jacob&sex=M
+  - contentinfo [ref=e48]:
+    - generic [ref=e49]: Built on public-domain data from the Social Security Administration.
+    - generic [ref=e50]:
+      - link "About" [ref=e51] [cursor=pointer]:
+        - /url: ./about.html
+      - text: ·
+      - link "SSA source" [ref=e52] [cursor=pointer]:
+        - /url: https://www.ssa.gov/oact/babynames/

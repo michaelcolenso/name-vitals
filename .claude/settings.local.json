@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m http.server 8747)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(pkill -f \"http.server\")",
+      "Bash(python3 -m http.server 8748)"
+    ]
+  }
+}

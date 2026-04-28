@@ -1,0 +1,69 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "Name Vitals" [ref=e4] [cursor=pointer]:
+      - /url: ./
+    - navigation [ref=e5]:
+      - link "Extinct" [ref=e6] [cursor=pointer]:
+        - /url: ./extinct.html
+      - link "Endangered" [ref=e7] [cursor=pointer]:
+        - /url: ./endangered.html
+      - link "Rising" [ref=e8] [cursor=pointer]:
+        - /url: ./rising.html
+      - link "About" [ref=e9] [cursor=pointer]:
+        - /url: ./about.html
+  - article [ref=e11]:
+    - heading "Maverick" [level=1] [ref=e12]
+    - generic [ref=e13]: Masculine · first seen 1957
+    - generic [ref=e14]: Rising
+    - img [ref=e15]:
+      - generic [ref=e19]: "1880"
+      - generic [ref=e20]: "1900"
+      - generic [ref=e21]: "1920"
+      - generic [ref=e22]: "1940"
+      - generic [ref=e23]: "1960"
+      - generic [ref=e24]: "1980"
+      - generic [ref=e25]: "2000"
+    - generic [ref=e26]:
+      - paragraph [ref=e27]: More babies were named Maverick in the last five years than in the five before that — the name is gaining ground.
+      - paragraph [ref=e28]:
+        - text: Your name peaked in 2017, when
+        - strong [ref=e29]: 4,702
+        - text: boys were named Maverick.
+      - paragraph [ref=e30]:
+        - text: In 2017, only
+        - strong [ref=e31]: 4,702
+        - text: boys were given the name.
+      - paragraph [ref=e32]:
+        - text: All told, about
+        - strong [ref=e33]: 20,417
+        - text: Americans have been named Maverick and recorded by the Social Security Administration since 1957.
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]: Peak year
+        - generic [ref=e37]: "2017"
+      - generic [ref=e38]:
+        - generic [ref=e39]: Peak count
+        - generic [ref=e40]: 4,702
+      - generic [ref=e41]:
+        - generic [ref=e42]: "2017"
+        - generic [ref=e43]: 4,702
+      - generic [ref=e44]:
+        - generic [ref=e45]: All-time
+        - generic [ref=e46]: 20,417
+    - generic [ref=e47]:
+      - button "Download share card" [ref=e48] [cursor=pointer]
+      - button "Share on Twitter" [ref=e49] [cursor=pointer]
+      - button "Copy link" [ref=e50] [cursor=pointer]
+    - generic [ref=e51]:
+      - text: Curious about the history of Maverick? Browse
+      - link "books about the name Maverick on Amazon" [ref=e52] [cursor=pointer]:
+        - /url: https://www.amazon.com/s?k=history%20of%20the%20name%20Maverick&tag=
+      - text: .
+  - contentinfo [ref=e53]:
+    - generic [ref=e54]: Built on public-domain data from the Social Security Administration.
+    - generic [ref=e55]:
+      - link "About" [ref=e56] [cursor=pointer]:
+        - /url: ./about.html
+      - text: ·
+      - link "SSA source" [ref=e57] [cursor=pointer]:
+        - /url: https://www.ssa.gov/oact/babynames/

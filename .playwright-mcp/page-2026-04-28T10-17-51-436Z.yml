@@ -1,0 +1,50 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "Name Vitals" [ref=e4] [cursor=pointer]:
+      - /url: ./
+    - navigation [ref=e5]:
+      - link "Extinct" [ref=e6] [cursor=pointer]:
+        - /url: ./extinct.html
+      - link "Endangered" [ref=e7] [cursor=pointer]:
+        - /url: ./endangered.html
+      - link "Rising" [ref=e8] [cursor=pointer]:
+        - /url: ./rising.html
+      - link "About" [ref=e9] [cursor=pointer]:
+        - /url: ./about.html
+  - heading "About" [level=1] [ref=e10]
+  - paragraph [ref=e11]: Name Vitals turns 138 years of Social Security Administration baby-name records into a one-glance vital-signs report for every name on file.
+  - heading "The data" [level=2] [ref=e12]
+  - paragraph [ref=e13]:
+    - text: The underlying dataset is released by the
+    - link "Social Security Administration" [ref=e14] [cursor=pointer]:
+      - /url: https://www.ssa.gov/oact/babynames/
+    - text: under a CC0 public-domain dedication. It lists, for every year since 1880, every first name given to at least five American babies that year, along with the count and the sex recorded on the application. We use Hadley Wickham's CC0 mirror (1880–2017) while the SSA's direct download is unavailable.
+  - heading "What \"status\" means" [level=2] [ref=e15]
+  - list [ref=e16]:
+    - listitem [ref=e17]:
+      - strong [ref=e18]: "Rising:"
+      - text: the last five years saw at least 20% more babies than the preceding five.
+    - listitem [ref=e19]:
+      - strong [ref=e20]: "Stable:"
+      - text: the last five years are within ±20% of the preceding five.
+    - listitem [ref=e21]:
+      - strong [ref=e22]: "Declining:"
+      - text: the last five years saw at least 20% fewer babies than the preceding five.
+    - listitem [ref=e23]:
+      - strong [ref=e24]: "Endangered:"
+      - text: peaked above 200 per year, but the most recent year came in at 10% of peak or lower.
+    - listitem [ref=e25]:
+      - strong [ref=e26]: "Extinct:"
+      - text: fewer than five babies have been given the name in any of the last ten years on record.
+  - heading "What's missing" [level=2] [ref=e27]
+  - paragraph [ref=e28]: Names given to fewer than five babies in a given year are omitted from the SSA file entirely — not zeroed out. A "zero" here means "fewer than five," not "none."
+  - heading "License" [level=2] [ref=e29]
+  - paragraph [ref=e30]:
+    - text: Source data is CC0. The code for Name Vitals lives in
+    - link "this repository" [ref=e31] [cursor=pointer]:
+      - /url: https://github.com/michaelcolenso/babynames
+    - text: .
+  - contentinfo [ref=e32]:
+    - generic [ref=e33]: Built on public-domain data from the Social Security Administration.
+    - link "Home" [ref=e35] [cursor=pointer]:
+      - /url: ./

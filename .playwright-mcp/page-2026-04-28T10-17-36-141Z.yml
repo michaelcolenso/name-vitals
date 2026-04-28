@@ -1,0 +1,240 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "Name Vitals" [ref=e4] [cursor=pointer]:
+      - /url: ./
+    - navigation [ref=e5]:
+      - link "Extinct" [ref=e6] [cursor=pointer]:
+        - /url: ./extinct.html
+      - link "Endangered" [ref=e7] [cursor=pointer]:
+        - /url: ./endangered.html
+      - link "Rising" [ref=e8] [cursor=pointer]:
+        - /url: ./rising.html
+      - link "About" [ref=e9] [cursor=pointer]:
+        - /url: ./about.html
+  - heading "Extinct baby names" [level=1] [ref=e10]
+  - paragraph [ref=e11]: Names once given to at least 500 babies in a single year, now given to none — and not given to any American baby in at least a decade.
+  - generic [ref=e12]:
+    - textbox "Check your own name" [ref=e13]
+    - button "Check" [ref=e14] [cursor=pointer]
+  - table [ref=e16]:
+    - rowgroup [ref=e17]:
+      - row "Name Peak year Peak Last year on record Trajectory" [ref=e18]:
+        - columnheader "Name" [ref=e19]
+        - columnheader "Peak year" [ref=e20]
+        - columnheader "Peak" [ref=e21]
+        - columnheader "Last year on record" [ref=e22]
+        - columnheader "Trajectory" [ref=e23]
+        - columnheader [ref=e24]
+    - rowgroup [ref=e25]:
+      - row "Pam F 1959 3,678 1996 Details →" [ref=e26]:
+        - cell "Pam F" [ref=e27]:
+          - link "Pam" [ref=e28] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Pam&sex=F
+          - text: F
+        - cell "1959" [ref=e29]
+        - cell "3,678" [ref=e30]
+        - cell "1996" [ref=e31]
+        - cell [ref=e32]:
+          - img [ref=e33]
+        - cell "Details →" [ref=e35]:
+          - link "Details →" [ref=e36] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Pam&sex=F
+      - row "Pat F 1941 1,900 1991 Details →" [ref=e37]:
+        - cell "Pat F" [ref=e38]:
+          - link "Pat" [ref=e39] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Pat&sex=F
+          - text: F
+        - cell "1941" [ref=e40]
+        - cell "1,900" [ref=e41]
+        - cell "1991" [ref=e42]
+        - cell [ref=e43]:
+          - img [ref=e44]
+        - cell "Details →" [ref=e46]:
+          - link "Details →" [ref=e47] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Pat&sex=F
+      - row "Deneen F 1964 1,604 2007 Details →" [ref=e48]:
+        - cell "Deneen F" [ref=e49]:
+          - link "Deneen" [ref=e50] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Deneen&sex=F
+          - text: F
+        - cell "1964" [ref=e51]
+        - cell "1,604" [ref=e52]
+        - cell "2007" [ref=e53]
+        - cell [ref=e54]:
+          - img [ref=e55]
+        - cell "Details →" [ref=e57]:
+          - link "Details →" [ref=e58] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Deneen&sex=F
+      - row "Laverne F 1924 1,383 2003 Details →" [ref=e59]:
+        - cell "Laverne F" [ref=e60]:
+          - link "Laverne" [ref=e61] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Laverne&sex=F
+          - text: F
+        - cell "1924" [ref=e62]
+        - cell "1,383" [ref=e63]
+        - cell "2003" [ref=e64]
+        - cell [ref=e65]:
+          - img [ref=e66]
+        - cell "Details →" [ref=e68]:
+          - link "Details →" [ref=e69] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Laverne&sex=F
+      - row "Dick M 1934 1,131 2005 Details →" [ref=e70]:
+        - cell "Dick M" [ref=e71]:
+          - link "Dick" [ref=e72] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Dick&sex=M
+          - text: M
+        - cell "1934" [ref=e73]
+        - cell "1,131" [ref=e74]
+        - cell "2005" [ref=e75]
+        - cell [ref=e76]:
+          - img [ref=e77]
+        - cell "Details →" [ref=e79]:
+          - link "Details →" [ref=e80] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Dick&sex=M
+      - row "Christop M 1989 1,082 1989 Details →" [ref=e81]:
+        - cell "Christop M" [ref=e82]:
+          - link "Christop" [ref=e83] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Christop&sex=M
+          - text: M
+        - cell "1989" [ref=e84]
+        - cell "1,082" [ref=e85]
+        - cell "1989" [ref=e86]
+        - cell [ref=e87]:
+          - img [ref=e88]
+        - cell "Details →" [ref=e90]:
+          - link "Details →" [ref=e91] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Christop&sex=M
+      - row "Kathi F 1958 824 2001 Details →" [ref=e92]:
+        - cell "Kathi F" [ref=e93]:
+          - link "Kathi" [ref=e94] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Kathi&sex=F
+          - text: F
+        - cell "1958" [ref=e95]
+        - cell "824" [ref=e96]
+        - cell "2001" [ref=e97]
+        - cell [ref=e98]:
+          - img [ref=e99]
+        - cell "Details →" [ref=e101]:
+          - link "Details →" [ref=e102] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Kathi&sex=F
+      - row "Bettye F 1933 763 1998 Details →" [ref=e103]:
+        - cell "Bettye F" [ref=e104]:
+          - link "Bettye" [ref=e105] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Bettye&sex=F
+          - text: F
+        - cell "1933" [ref=e106]
+        - cell "763" [ref=e107]
+        - cell "1998" [ref=e108]
+        - cell [ref=e109]:
+          - img [ref=e110]
+        - cell "Details →" [ref=e112]:
+          - link "Details →" [ref=e113] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Bettye&sex=F
+      - row "Gay F 1959 682 1982 Details →" [ref=e114]:
+        - cell "Gay F" [ref=e115]:
+          - link "Gay" [ref=e116] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Gay&sex=F
+          - text: F
+        - cell "1959" [ref=e117]
+        - cell "682" [ref=e118]
+        - cell "1982" [ref=e119]
+        - cell [ref=e120]:
+          - img [ref=e121]
+        - cell "Details →" [ref=e123]:
+          - link "Details →" [ref=e124] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Gay&sex=F
+      - row "Lorri F 1961 675 1996 Details →" [ref=e125]:
+        - cell "Lorri F" [ref=e126]:
+          - link "Lorri" [ref=e127] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Lorri&sex=F
+          - text: F
+        - cell "1961" [ref=e128]
+        - cell "675" [ref=e129]
+        - cell "1996" [ref=e130]
+        - cell [ref=e131]:
+          - img [ref=e132]
+        - cell "Details →" [ref=e134]:
+          - link "Details →" [ref=e135] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Lorri&sex=F
+      - row "Nannie F 1920 655 1991 Details →" [ref=e136]:
+        - cell "Nannie F" [ref=e137]:
+          - link "Nannie" [ref=e138] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Nannie&sex=F
+          - text: F
+        - cell "1920" [ref=e139]
+        - cell "655" [ref=e140]
+        - cell "1991" [ref=e141]
+        - cell [ref=e142]:
+          - img [ref=e143]
+        - cell "Details →" [ref=e145]:
+          - link "Details →" [ref=e146] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Nannie&sex=F
+      - row "Flossie F 1919 613 1987 Details →" [ref=e147]:
+        - cell "Flossie F" [ref=e148]:
+          - link "Flossie" [ref=e149] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Flossie&sex=F
+          - text: F
+        - cell "1919" [ref=e150]
+        - cell "613" [ref=e151]
+        - cell "1987" [ref=e152]
+        - cell [ref=e153]:
+          - img [ref=e154]
+        - cell "Details →" [ref=e156]:
+          - link "Details →" [ref=e157] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Flossie&sex=F
+      - row "Virgie F 1918 566 1997 Details →" [ref=e158]:
+        - cell "Virgie F" [ref=e159]:
+          - link "Virgie" [ref=e160] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Virgie&sex=F
+          - text: F
+        - cell "1918" [ref=e161]
+        - cell "566" [ref=e162]
+        - cell "1997" [ref=e163]
+        - cell [ref=e164]:
+          - img [ref=e165]
+        - cell "Details →" [ref=e167]:
+          - link "Details →" [ref=e168] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Virgie&sex=F
+      - row "Kecia F 1965 560 2003 Details →" [ref=e169]:
+        - cell "Kecia F" [ref=e170]:
+          - link "Kecia" [ref=e171] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Kecia&sex=F
+          - text: F
+        - cell "1965" [ref=e172]
+        - cell "560" [ref=e173]
+        - cell "2003" [ref=e174]
+        - cell [ref=e175]:
+          - img [ref=e176]
+        - cell "Details →" [ref=e178]:
+          - link "Details →" [ref=e179] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Kecia&sex=F
+      - row "Tonja F 1967 512 2005 Details →" [ref=e180]:
+        - cell "Tonja F" [ref=e181]:
+          - link "Tonja" [ref=e182] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Tonja&sex=F
+          - text: F
+        - cell "1967" [ref=e183]
+        - cell "512" [ref=e184]
+        - cell "2005" [ref=e185]
+        - cell [ref=e186]:
+          - img [ref=e187]
+        - cell "Details →" [ref=e189]:
+          - link "Details →" [ref=e190] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Tonja&sex=F
+      - row "Debi F 1958 503 2006 Details →" [ref=e191]:
+        - cell "Debi F" [ref=e192]:
+          - link "Debi" [ref=e193] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Debi&sex=F
+          - text: F
+        - cell "1958" [ref=e194]
+        - cell "503" [ref=e195]
+        - cell "2006" [ref=e196]
+        - cell [ref=e197]:
+          - img [ref=e198]
+        - cell "Details →" [ref=e200]:
+          - link "Details →" [ref=e201] [cursor=pointer]:
+            - /url: http://localhost:8748/?name=Debi&sex=F
+  - contentinfo [ref=e202]:
+    - generic [ref=e203]: Based on SSA records.
+    - link "Methodology" [ref=e205] [cursor=pointer]:
+      - /url: ./about.html
